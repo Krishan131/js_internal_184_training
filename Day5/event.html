@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hid1">This is first heading</h1>
+    <h2 id="hid2">This is second heading</h2>
+
+    <button id="btn1">Change text</button>
+    <button id="btn2">Change color</button><br>
+    <button id="red">Red</button><br>
+    <button id="green">Green</button><br>
+    <button id="blue">Blue</button>
+    <script>
+        // Button 1: Change text
+        document.getElementById("btn1").addEventListener("click", function(){
+            document.getElementById("hid1").innerHTML = "new value";
+            document.getElementById("hid2").innerHTML = "new value 2";
+        });
+
+        // Button 2: Change colors
+        document.getElementById("btn2").addEventListener("click", function(){
+            document.getElementById("hid1").style.color = "pink";
+            document.getElementById("hid2").style.color = "yellow";
+        });
+        document.getElementById("red").addEventListener("click", function(){
+            document.querySelector("body").style.backgroundColor = "red";
+        });
+        document.getElementById("blue").addEventListener("click", function(){
+            document.querySelector("body").style.backgroundColor = "blue";
+            
+        });
+        document.getElementById("green").addEventListener("click", function(){
+            document.querySelector("body").style.backgroundColor = "green";
+           
+        });
+        
+        
+    </script>
+</body>
+</html>

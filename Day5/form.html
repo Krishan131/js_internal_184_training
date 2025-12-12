@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(56, 41, 41);
+            color: white;
+
+        }
+
+        input {
+            border: 3px solid blue;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <form action="" id="validationForm">
+        <h1>Form Validation</h1>
+        <input type="text" placeholder="Enter your name" style="margin: 10px ;" id="inp1">
+        <br>
+        <input type="password" placeholder="Enter your password" style="margin: 10px;" id="inp2"><br>
+        <button type="submit" style="margin: 10px;" >Submit</button>
+        <p style="color : red;" id="p1"></p>
+        <script>
+            document.getElementById("validationForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                let name = document.getElementById("inp1").value.trim();
+                let password = document.getElementById("inp2").value.trim();
+                let error = document.getElementById("p1");
+                if(name === ""){
+                    error.innerHTML = "name required";
+                }
+                else{
+                    error.innerHTML = "name accepted";
+                    error.style.color = "green";
+                }
+        
+            });
+        </script>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of with Html</title>
+</head>
+<body>
+    <h1 id="hid1">This is first heading</h1>
+    <h2 id="hid2">This is second heading</h2>
+    <button onclick="fun()">CLICK</button>
+    <button onclick="fun1()">CLICK2</button>
+    <script>
+        document.getElementById("hid1").addEventListener(click,function(){
+
+        })
+        function fun(){
+        document.getElementById("hid1").innerHTML = "new value"
+        document.getElementById("hid1").style.color = "green"
+        }
+        function fun1(){
+        document.getElementById("hid2").innerHTML = "new value 2"
+        document.getElementById("hid2").style.color = "blue"
+        }
+    </script>
+</body>
+</html>
