@@ -1,0 +1,39 @@
+DOM & Events (Day-4) 
+Task 1: Change Text on Button Click 
+Create an HTML page with a <p> tag and a <button>. 
+When user clicks the button, change text to "Welcome to JavaScript!" 
+Task 2: Background Color Changer 
+Create 3 buttons: Red, Blue, Green. 
+On clicking each button, change background color of page. 
+Task 3: Image Switcher 
+Create an <img> tag and two buttons Next & Previous. 
+Clicking buttons should switch between two images. 
+Task 4: Show/Hide Paragraph 
+Create a paragraph and a button. 
+Click button → hide paragraph 
+Click again → show paragraph 
+(hint: style.display = "none" / "block") 
+Task 5: Counter App 
+Create two buttons + Increase & - Decrease. 
+Display count in <span>. 
+Count cannot go below 0. 
+Task 6: Create Element Dynamically 
+Create a button "Add Box". 
+On click → create a <div> and append to body. 
+Bonus: add border + padding + background style. 
+Task 7: Form Input Reader 
+Create a form with input name and a button. 
+When clicked → print user name in output area. 
+Task 8: Todo List 
+Input field + Add Task button. 
+Add tasks in <ul> list on click. 
+Task 9: Attribute Change 
+Add an image and two buttons: 
+Small & Large → change image size using setAttribute(). 
+Task 10: Theme Switcher 
+Light Mode ↔ Dark Mode toggle using one button. 
+Bonus Challenge (For extra marks) 
+Task 11: Live Clock 
+Show real-time clock updating every second using setInterval(). 
+Task 12: Random Quote Generator 
+Use array of quotes → every click display new one.

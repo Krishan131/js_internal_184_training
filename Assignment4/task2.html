@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Background Color Changer</title>
+    <style>
+        /* Minimal styling if needed, otherwise empty */
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Pick a Background Color</h1>
+    <div>
+        <button id="btn-red" onclick="changeColor('red')">Red</button>
+        <button id="btn-blue" onclick="changeColor('blue')">Blue</button>
+        <button id="btn-green" onclick="changeColor('green')">Green</button>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+
+</html>

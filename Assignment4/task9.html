@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9: Attribute Change</title>
+
+</head>
+
+<body>
+
+    <h1>Resize Image</h1>
+
+    <!-- Using a placeholder image or reusing one from previous tasks -->
+    <img id="myImage" src="img1.jpg" alt="Resizable Image" width="300">
+
+    <div class="controls">
+        <button id="smallBtn">Small</button>
+        <button id="largeBtn">Large</button>
+    </div>
+
+    <script>
+        const img = document.getElementById('myImage');
+        const smallBtn = document.getElementById('smallBtn');
+        const largeBtn = document.getElementById('largeBtn');
+
+        smallBtn.addEventListener('click', () => {
+            img.setAttribute('width', '150');
+        });
+
+        largeBtn.addEventListener('click', () => {
+            img.setAttribute('width', '500');
+        });
+    </script>
+</body>
+
+</html>

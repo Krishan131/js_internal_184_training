@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10: Theme Switcher</title>
+    <style>
+        body.light {
+            background-color: white;
+            color: black;
+        }
+
+        body.dark {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body class="light">
+
+    <h1>Theme Switcher</h1>
+    <p>Click the button to toggle the theme.</p>
+
+    <button id="themeBtn">Switch to Dark Mode</button>
+
+    <script>
+        const body = document.body;
+        const btn = document.getElementById('themeBtn');
+
+        btn.addEventListener('click', () => {
+            if (body.classList.contains('light')) {
+                body.classList.replace('light', 'dark');
+                btn.textContent = 'Switch to Light Mode';
+            } else {
+                body.classList.replace('dark', 'light');
+                btn.textContent = 'Switch to Dark Mode';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12: Random Quote Generator</title>
+
+</head>
+
+<body>
+
+    <div id="quote-container">
+        <p id="quote">"The only way to do great work is to love what you do."</p>
+        <span id="author">- Steve Jobs</span>
+        <br>
+        <button id="newQuoteBtn">New Quote</button>
+    </div>
+
+    <script>
+        const quotes = [
+            { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+            { text: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs" },
+            { text: "Stay hungry, stay foolish.", author: "Steve Jobs" },
+            { text: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius" },
+            { text: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
+            { text: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
+            { text: "In the middle of every difficulty lies opportunity.", author: "Albert Einstein" },
+            { text: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill" }
+        ];
+
+        const quoteText = document.getElementById('quote');
+        const authorText = document.getElementById('author');
+        const btn = document.getElementById('newQuoteBtn');
+
+        btn.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quote = quotes[randomIndex];
+            quoteText.textContent = `"${quote.text}"`;
+            authorText.textContent = `- ${quote.author}`;
+        });
+    </script>
+</body>
+
+</html>

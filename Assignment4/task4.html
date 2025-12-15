@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4: Show/Hide Paragraph</title>
+
+</head>
+
+<body>
+
+    <h1>Toggle Paragraph</h1>
+
+    <p id="myParagraph">This is the paragraph that will be shown or hidden.</p>
+
+    <button id="toggleBtn">Hide Paragraph</button>
+
+    <script>
+        const btn = document.getElementById('toggleBtn');
+        const para = document.getElementById('myParagraph');
+
+        btn.addEventListener('click', () => {
+            if (para.style.display === 'none') {
+                para.style.display = 'block';
+                btn.textContent = 'Hide Paragraph';
+            } else {
+                para.style.display = 'none';
+                btn.textContent = 'Show Paragraph';
+            }
+        });
+    </script>
+</body>
+
+</html>

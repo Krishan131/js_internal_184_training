@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Form Input Reader</title>
+
+</head>
+
+<body>
+
+    <h1>Name Input</h1>
+
+    <div style="margin-bottom: 10px;">
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="submitBtn">Submit</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        const input = document.getElementById('nameInput');
+        const btn = document.getElementById('submitBtn');
+        const output = document.getElementById('output');
+
+        btn.addEventListener('click', () => {
+            const name = input.value;
+            if (name) {
+                output.textContent = `Hello, ${name}!`;
+            } else {
+                output.textContent = 'Please enter a name.';
+            }
+        });
+    </script>
+</body>
+
+</html>
