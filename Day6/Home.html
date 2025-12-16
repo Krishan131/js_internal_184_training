@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: whitesmoke;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #div1 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    #mainDiv {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px;
+    }
+
+    #leftDiv,
+    #rightDiv,
+    #loginDiv {
+      border: 1px solid gray;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      height: 500px;
+    }
+
+
+    #loginDiv input {
+      width: 90%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    #loginDiv button {
+      margin: 5px;
+      padding: 5px 10px;
+    }
+    #leftDiv{
+        background-image: url('download.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: blue;
+    }
+  </style>
+    
+</head>
+
+<body>
+
+  <div id="div1">
+    <h1>Welcome! to Home Page</h1>
+  </div>
+
+  <hr />
+
+  <div id="mainDiv">
+
+    <div id="leftDiv">
+      <h1>Left component</h1>
+     
+    </div>
+
+    <div id="rightDiv">
+      <h1>Center component</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus illum reprehenderit, quam laudantium nulla eos odio, nisi rem ad facere fuga unde natus magni sint exercitationem quod in voluptas odit.</p>
+    </div>
+    <form action="next.html" method="get" id="loginDiv">
+     <h1>Login</h1>
+      <h2>Name :</h2>
+      <input type="text" name="firstname" id="name"/>
+
+      <h2>Password :</h2>
+      <input type="password" name = "password" id="password"/>
+
+      <br />
+      <button onclick="">Submit</button>
+     </form> 
+    </form>
+  </div>
+  <script>
+    let name = document.getElementById("name");
+    let password = document.getElementById("password")
+    function validate(){
+    if(name ===""|| password===""){
+        alert("name,password cannot be blank")
+    }
+}
+  </script>
+</body>
+</html>
