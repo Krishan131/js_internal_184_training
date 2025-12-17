@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hd1">Ths is this</h1>
+    <h1 id="hd2"></h1>
+    <script>
+         let params = new URLSearchParams(window.location.search);
+        let na = params.get("firstname");
+        let pa = params.get("password")
+        document.getElementById("hd1").innerHTML = `Welcome! ${na}`;
+        document.getElementById("hd2").innerHTML = `Your password is ${pa}`;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        .nav-bar{
+              display: flex;
+            
+              justify-content: center;
+        }
+        .nav-bar a{
+            margin:0px 40px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .main-div{
+            display: flex;
+            justify-content: center;
+             
+        }
+       
+        #div1{
+            background-color: aqua;
+            width: 30%;
+            height: 500px;
+        }
+         #div2{
+            background-color: mediumvioletred;
+             width: 40%;
+            height: 500px;
+            align-items: center;
+        } 
+        #div3{
+            background-color: salmon;
+             width: 30%;
+            height: 500px;
+        }
+        #div3 form{
+            align-items: center;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+         <h1>Demo of online Project</h1>
+    </center>
+    <hr color="green">
+    <nav class="nav-bar">
+        <a href="">Home Gallery</a>
+        <a href="">Menu 1</a>
+        <a href="">Menu 2</a>
+        <a href="">Menu 3</a>
+        <a href="">Menu 4</a>
+    </nav>
+    <hr color="green">
+    <div class="main-div">
+    <div id="div1">
+          <center>
+            <h2>Left</h2>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+          </center>
+    </div>
+    <div id="div2">
+        <center>
+        <h1>Notice</h1>
+        </center>
+           <marquee behavior="" direction="up" style="display: block; margin: auto; width: 50%;">
+           <h3>Notice</h3>
+           <h3>Notice</h3>
+           <h3>Notice</h3>
+           <h3>Notice</h3>
+           <h3>Notice</h3>
+           <h3>Notice</h3>
+           <h3>Notice</h3>
+        </marquee>
+    </div>
+    <div id="div3">
+      <form action="log.html" method="get" id="loginDiv">
+     <h1>Login</h1>
+      <h2>Name :</h2>
+      <input type="text" name="firstname" id="name"/>
+
+      <h2>Password :</h2>
+      <input type="password" name = "password" id="password"/>
+
+      <br />
+      <button type="submit">Submit</button>
+      <p id="p1"></p> 
+     </form>
+     
+    </div>
+    </div>
+    <script>
+         document.getElementById("loginDiv").addEventListener("submit", function (event) {
+                event.preventDefault();
+                let name = document.getElementById("name").value.trim();
+                let password = document.getElementById("password").value.trim();
+                let error = document.getElementById("p1");
+                if(name === ""){
+                    error.innerHTML = "name required";
+                }
+                else{
+                    error.innerHTML = "Form submitted succesfully";
+                    error.style.color = "green";
+                    this.submit();
+                }
+            })
+    </script>
+
+</body>
+</html>
